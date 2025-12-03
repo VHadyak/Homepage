@@ -3,9 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Homepage of Vlad Hadyak (NOT a real portfolio)" />
     <title>Homepage</title>
 
-    <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
+    <link rel="preload" href="Assets/fonts/OpenSans.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="Assets/fonts/Montserrat.ttf" as="font" type="font/ttf" crossorigin />
+    <link href="normalize.css" rel="stylesheet" />
     <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
@@ -27,7 +30,13 @@
       <!-- About Me Section -->
       <section class="about">
         <div class="left-section">
-          <img src="Assets/img/vlad-h.jpeg" alt="Portrait of Vlad Hadyak" />
+          <img
+            src="Assets/img/vlad-h-1872x2496.webp"
+            srcset="Assets/img/vlad-h-936x1248.webp 936w, Assets/img/vlad-h-1872x2496.webp 1872w"
+            sizes="(max-width: 768px) 40vw, 500px"
+            alt="Portrait of Vlad Hadyak"
+            fetchpriority="high"
+          />
         </div>
 
         <div class="right-section">
@@ -65,7 +74,12 @@
 
         <article class="card card1">
           <div class="img-wrapper">
-            <img src="Assets/img/battleship.png" alt="Screenshot of the Battleship game" />
+            <img
+              src="Assets/img/battleship.webp"
+              alt="Screenshot of the Battleship game"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
 
           <div class="project-header">
@@ -92,7 +106,7 @@
 
         <article class="card card2">
           <div class="img-wrapper">
-            <img src="Assets/img/todo.png" alt="Screenshot of the To-Do List app" />
+            <img src="Assets/img/todo.webp" alt="Screenshot of the To-Do List app" loading="lazy" decoding="async" />
           </div>
 
           <div class="project-header">
@@ -114,7 +128,12 @@
 
         <article class="card card3">
           <div class="img-wrapper">
-            <img src="Assets/img/weather-app.png" alt="Screenshot of the Weather app" />
+            <img
+              src="Assets/img/weather-app.webp"
+              alt="Screenshot of the Weather app"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
 
           <div class="project-header">
@@ -137,7 +156,12 @@
 
         <article class="card card4">
           <div class="img-wrapper">
-            <img src="Assets/img/calculator.png" alt="Screenshot of the Calculator app" />
+            <img
+              src="Assets/img/calculator.webp"
+              alt="Screenshot of the Calculator app"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
 
           <div class="project-header">
@@ -157,7 +181,12 @@
 
         <article class="card card5">
           <div class="img-wrapper">
-            <img src="Assets/img/admin-dashboard.png" alt="Screenshot of the Admin Dashboard" />
+            <img
+              src="Assets/img/admin-dashboard.webp"
+              alt="Screenshot of the Admin Dashboard"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
 
           <div class="project-header">
@@ -184,7 +213,12 @@
 
         <article class="card card6">
           <div class="img-wrapper">
-            <img src="Assets/img/etch-a-sketch.png" alt="Screenshot of the Etch-a-Sketch" />
+            <img
+              src="Assets/img/etch-a-sketch.webp"
+              alt="Screenshot of the Etch-a-Sketch"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
 
           <div class="project-header">
@@ -246,7 +280,7 @@
       </div>
 
       <div class="footer-img">
-        <img src="Assets/img/contact.jpg" alt="" />
+        <img src="Assets/img/contact.webp" alt="" loading="lazy" decoding="async" />
       </div>
     </footer>
   </body>
